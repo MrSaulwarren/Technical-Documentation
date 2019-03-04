@@ -1,0 +1,51 @@
+body{
+  font-size: 1.1rem;
+  font-family: sans-serif,monospace,cursive;
+  margin: 0;
+  background: #b5ff7d;
+}
+
+nav{
+  /*position: fixed;
+  background-color: #52d681
+  */
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+.flex-logo{
+  position: relative;
+}
+
+.flex-1{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 800px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*COMBINATOR SELECTOR GROUP*/
+.flex-1 li{
+  text-align: center;
+}
+
+#navbar section li{
+  position: relative;
+}
+
+#index .nav-ul-1{
+  height: 15%;
+}
+
+#navbar .nav-ul-2{
+  height: 33%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
