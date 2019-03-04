@@ -3,12 +3,42 @@ body{
   font-family: sans-serif,monospace,cursive;
   margin: 0;
   background: #b5ff7d;
+
 }
 
-nav{
-  /*position: fixed;
-  background-color: #52d681
-  */
+img{
+  width: 100%;
+  }
+
+nav #navbar{
+  background-color: #52d681;
+  position: fixed;
+  border-right-color: black;
+  border-right-style: inset;
+  border-left: black;
+  border-left-style: outset;
+  border-top: black;
+  }
+a{
+  text-decoration: none;
+}
+
+section{
+  justify-content: center;
+}
+
+#main-doc{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  position:absolute;
+  left:300px;
+}
+
+#main-doc section{
+  text-align: justify;
+  margin:auto 0;
+  margin:17px;
 }
 
 ul{
@@ -17,35 +47,100 @@ ul{
   list-style-type: none;
 }
 
-.flex-logo{
-  position: relative;
-}
-
 .flex-1{
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 800px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  height: 100%;
+}
+
+#navbar {
+  background-color: #52d681;
+  position: fixed;
+  width: 300px;
+  max-height: 100%;
+  border: none;
+  border-bottom: 2px solid;
+  height: 100%;
 }
 
 
+
 /*COMBINATOR SELECTOR GROUP*/
+
+.Flex-logo{
+  width: 80px;
+  height: 80px;
+}
+
 .flex-1 li{
   text-align: center;
 }
 
-#navbar section li{
-  position: relative;
+#navbar li{
+  padding: 2px
 }
 
 #index .nav-ul-1{
   height: 15%;
+  position: relative;
+  bottom: 5%;
 }
 
 #navbar .nav-ul-2{
-  height: 33%;
-  overflow-y: auto;
+  height: 15%;
+  overflow-y: scroll;
   overflow-x: hidden;
+  color: green;
+  font-size: 1.1rem;
+  position: fixed;
+  bottom: 5%;
+}
+
+.flex-1 header{
+  font-weight: bolder;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  position: relative;
+  bottom: 2%;
+}
+
+.nav-ul-1 li{
+  color: green;
+  font-size: 1.3em;
+}
+
+  .nav-ul-2 li{
+    color: green;
+    font-size: 1.3em;
+}
+
+section p{
+  font-size: 1.5rm;
+
+
+@media only screen and (max-width: 800px) {
+    #navbar ul{
+    border:1px solid;
+    height:300px;
+  }
+    #navbar{
+      background-color:#52d681;
+      position:relative;
+      width:100%;
+      max-height:300px;
+      border:none;
+      border-bottom:2px solid;
+    }
+
+    .flex-1 li{
+      text-align: left;
+    }
+
+  html{
+    margin:0;
+    padding:0;
+  }
 }

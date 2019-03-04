@@ -3,52 +3,137 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/styles.css">
-    <link name="viewport" contents="device=width-device, scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flexbox-Technical-Info</title>
   </head>
   <body>
     <nav id="navbar">
       <section id="index" class="flex-1">
-      <img class="Flex-logo" src="https://i.ibb.co/Fbz40s6/imageedit-4-8225760400.png" alt="flex-Logo">
-      <header class="header">Flexbox Documentation</header>
-      <h1>Docs Glossary</h1>
-        <ul class="nav-ul-1">
-          <a class="nav-link" href="#Flex" rel="internal"></a><li>Flex</li>
-          <a class="nav-link" href="#Flex Container" rel="internal"></a><li>Flex Container</li>
-          <a class="nav-link" href="#Flex Item" rel="internal"></a><li>Flex Item</li>
-          <a class="nav-link" href="#Grid" rel="internal"></a><li>Grid</li>
-        </ul>
-        <h2>CSS Properties</h2>
-        <ul class="nav-ul-2">
-          <a class="nav-link" href="#align-content" rel="internal"></a><li>align-content</li>
-          <a class="nav-link" href="#align-items" rel="internal"></a><li>align-items</li>
-          <a class="nav-link" href="#align-self" rel="internal"></a><li>align-self</li>
-          <a class="nav-link" href="#flex-Explained" rel="internal"></a><li>flex-Explained</li>
-          <a class="nav-link" href="#flex-basis" rel="internal"></a><li>flex-basis</li>
-          <a class="nav-link" href="#flex-direction" rel="internal"></a><li>flex-direction</li>
-          <a class="nav-link" href="#flex-flow" rel="internal"></a><li>flex-flow</li>
-          <a class="nav-link" href="#flex-grow" rel="internal"></a><li>flex-grow</li>
-          <a class="nav-link" href="#flex-shrink" rel="internal"></a><li>flex-shrink</li>
-          <a class="nav-link" href="#flex-wrap" rel="internal"></a><li>flex-wrap</li>
-          <a class="nav-link" href="#justify-content" rel="internal"></a><li>justify-content</li>
-          <a class="nav-link" href="#order" rel="internal"></a><li>order</li>
-        </ul>
-        <section>
-      </nav>
-      <main id="main-doc">
-        <section class="main-section" id="Flex">
-          <header class="header">Flex</header>
-          <article>
-            flex is a new value added to the CSS display property. Along with inline-flex it causes the element that it applies to to become a flex container, and the element's children to each become a flex item. The items then participate in flex layout, and all of the properties defined in the CSS Flexible Box Layout Module may be applied.
-            The flex property is a shorthand for the flexbox properties flex-grow, flex-shrink and flex-basis.
-            In addition <flex> can refer to a flexible length in CSS Grid Layout.
-          </article>
+          <img class="Flex-logo" src="https://i.ibb.co/Fbz40s6/imageedit-4-8225760400.png" alt="flex-Logo">
+            <header>Flexbox Documentation</header>
+          <h2>Docs Glossary</h2>
+            <ul class="nav-ul-1">
+              <a class="nav-link" href="#Flex" rel="internal"><li>Flex</li></a>
+              <a class="nav-link" href="#Flex_Container" rel="internal"><li>Flex Container</li></a>
+              <a class="nav-link" href="#Flex_Items" rel="internal"><li>Flex Items</li></a>
+              <a class="nav-link" href="#Grid" rel="internal"><li>Grid</li></a>
+            </ul>
+                <h2>CSS Properties</h2>
+            <ul class="nav-ul-2">
+              <a class="nav-link" href="#Align_Content" rel="internal"><li>Align Content</li></a>
+              <a class="nav-link" href="#Align_Items" rel="internal"><li>Align Items</li></a>
+              <a class="nav-link" href="#Align_Self" rel="internal"><li>Align Self</li></a>
+              </ul>
+           </section>
+          </nav>
+          <main id="main-doc">
+            <section class="FLEXBOX" id="FLEXBOX">
+                <header>FLEXBOX</header>
+                  <article>
+                  <p>Flexbox is the commonly-used name for the CSS Flexible Box Layout Module, a layout model
+                  for displaying items in a single dimension — as a row or as a column. In the specification, Flexbox is described as a layout model for user interface design. The key feature of Flexbox is the fact that items in a flex layout can grow and shrink. Space
+                  can be assigned to the items themselves, or distributed between or around the items. Flexbox also enables alignment of items on the main or cross axis, thus providing a high level of control over the size and alignment of a group of items.</p>
+                    </article>
+              </section>
+            <section class="main-section" id="Flex">
+              <header>Flex</header>
+                <article>
+                  <p>flex is a new value added to the CSS display property. Along with inline-flex it causes the element that it
+                   applies to to become a flex container, and the element's children to each become a flex item. The items then participate in flex layout, and all of the properties defined in the CSS Flexible Box Layout Module may be applied.
+                   The flex property is a shorthand for the flexbox properties flex-grow, flex-shrink and flex-basis.
+                   In addition <flex> can refer to a flexible length in <i>CSS Grid Layout</i>.</p>
+                </article>
+                  <div class="propertylist">
+                    <ul>
+                      <li>align-items</li>
+                      <li>order</li>
+                      <li>flex-shrink</li>
+                      <li>flex-grow</li>
+                      <li>flex-direction</li>
+                      <li>flex-basis</li>
+                      <li>align-content</li>
+                      <li>align-self</li>
+                      <li>flex</li>
+                      <li>flex-flow</li>
+                      <li>flex-wrap</li>
+                      <li>justify-content</li>
+                    </ul>
+                  </div>
+            </section>
+              <section class="main-section" id="Flex_Container">
+                <header>Flex Container</header>
+                  <article>
+                  <p>A flexbox layout is defined using the flex or inline-flex values of the display property on the parent item. This element then becomes a flex container, and each one of its children becomes a flex item.
+                  A value of flex causes the element to become a block level flex container, and inline-flex an inline level flex container. These values create a flex formatting context for the element, which is similar to
+                  a block formatting context in that floats will not intrude into the container, and the margins on the container will not collapse with those of the items.</p>
+                </article>
+                    <div class="propertylist">
+                      <ul>
+                        <li>align-content</li>
+                        <li>align-items</li>
+                        <li>flex</li>
+                        <li>flex-direction</li>
+                        <li>flex-flow</li>
+                        <li>flex-wrap</li>
+                        <li>justify-content</li>
+                      </ul>
+                    </div>
+                </section>
+                  <section class="main-section" id="Grid">
+                    <header>Grid</header>
+                    <article>
+                      <p>A CSS grid is defined using the grid value of the display property; you can define columns and rows on your grid using the grid-template-rows and grid-template-columns properties.
+                      The grid that you define using these properties is described as the explicit grid. If you place content outside of this explicit grid, or if you are relying on auto-placement and the
+                      grid algorithm needs to create additional row or column tracks to hold grid items, then extra tracks will be created in the implicit grid. The implicit grid is the grid
+                      created automatically due to content being added outside of the tracks defined. In the example below I have created an explicit grid of three columns and two rows. The third row on the
+                      grid is an implicit grid row track, formed due to their being more than the six items which fill the explicit tracks.</p>
+                    </article>
+                    <code>
+                      <img src="./images/Grid code.JPG" alt="Grid-Code">
+                    </code>
+                      <figure class="figure">
+                        <img src="./images/Grid example.JPG" alt="grid-template">
+                        <figcaption class="fig">3x3 Grid Column</figcaption>
+                      </figure>
+                    <a href="https://codepen.io/pen/?&editable=true" target="_blank" rel="external">Open in Codepen</a>
+                </section>
+              <section class="main-section" id="Align_Content">
+                <header>Align Content</header>
+                <article><p>The CSS align-content property sets how the browser distributes space between and around content items along the cross-axis of a flexbox
+                container, and the main-axis of a grid container.The interactive example below use Grid Layout to demonstrate some of the values of this property.</p>
+                </article>
+                <code>
+                  <img src="./images/align contents.JPG" alt="align contents">
+                </code>
+                <code>
+                  <img src="./images/Align-content-code.JPG" alt="">
+                </code>
+                </section>
 
 
+                <section class="main-section" id="Align_Items">
+                  <header>Align Items</header>
+                  <p></p>
+                  <p><p>
+                  <code></code>
+                  </section>
 
-        </section>
+
+                  <section class="main-section" id="Align_Self">
+                    <header>Align Self</header>
+                    <p></p>
+                    <p></p>
+                    <code></code>
+                    </section>
+
+                    <section class="main-section" id="Flex_Items">
+                      <header>Flex Items</header>
+                      <p></p>
+                      <p></p>
+                      <code></code>
+                    </section>
+
 
       </main>
-
-  </body>
+    </body>
 </html>
