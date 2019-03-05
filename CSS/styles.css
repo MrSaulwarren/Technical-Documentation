@@ -30,7 +30,7 @@ section{
 #main-doc{
   display:flex;
   flex-direction:column;
-  justify-content: space-evenly;
+  justify-content:space-around;
   position:absolute;
   left:300px;
 }
@@ -53,7 +53,7 @@ ul{
   width: 300px;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  height: 80%;
 }
 
 #navbar {
@@ -80,11 +80,11 @@ ul{
 }
 
 #navbar li{
-  padding: 2px
+  padding: 15px
 }
 
 #index .nav-ul-1{
-  height: 15%;
+  height: 25%;
   position: relative;
   bottom: 5%;
 }
@@ -118,29 +118,100 @@ ul{
 }
 
 section p{
-  font-size: 1.5rm;
+  font-size: 1.5rem;
+}
 
-
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
     #navbar ul{
     border:1px solid;
     height:300px;
   }
     #navbar{
-      background-color:#52d681;
-      position:relative;
-      width:100%;
-      max-height:300px;
-      border:none;
-      border-bottom:2px solid;
+      background-color: #52d681;
+      position: fixed;
+      width: 100%;
+      justify-content: center;
+      max-height: 209px;
+      border: none;
+      border-bottom: 2px solid;
+      z-index: 1;
+      display: inline-flex;
+      overflow: auto;
+      overflow-x: hidden;
     }
 
+    .flex-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
     .flex-1 li{
       text-align: left;
     }
 
-  html{
-    margin:0;
-    padding:0;
+    #main-doc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 34%;
+    left:0;
+    margin:2rem;
   }
+#navbar .nav-ul-2{
+    height: 27%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: green;
+    font-size: 1.1rem;
+    position: relative;
+    order: 5;
+}
+
+#main-doc section {
+    text-align: justify;
+    margin: auto 0;
+  }
+
+html{
+  margin:0;
+  padding:0;
+}
+.Flex-logo {
+  width: 80px;
+  height: 80px;
+  order: 0;
+  padding-top: 7px;
+}
+
+.flex-1 header {
+    font-weight: bolder;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    position: relative;
+    bottom: -1%;
+    order: 0;
+  }
+
+  #index .Glossary h2{
+    order: 3;
+  }
+
+  #index .CSS h2{
+    order: 5;
+  }
+
+  #index .nav-ul-1 {
+      height: 25%;
+      position: relative;
+      bottom: 2%;
+      order: 0;
+  }
+
+
+
+
+
+
 }
